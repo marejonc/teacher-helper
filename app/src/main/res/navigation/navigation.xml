@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation"
+    app:startDestination="@id/fragmentHome">
+
+    <fragment
+        android:id="@+id/fragmentHome"
+        android:name="com.example.teacherhelper.ui.FragmentHome"
+        android:label="FragmentHome" >
+        <action
+            android:id="@+id/action_fragmentHome_to_fragmentStudents"
+            app:destination="@id/fragmentStudents" />
+        <action
+            android:id="@+id/action_fragmentHome_to_fragmentSubjects"
+            app:destination="@id/fragmentSubjects" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentSubjects"
+        android:name="com.example.teacherhelper.ui.FragmentSubjects"
+        android:label="FragmentSubjects" >
+        <action
+            android:id="@+id/action_fragmentSubjects_to_fragmentSubjectEdit"
+            app:destination="@id/fragmentSubjectEdit" />
+        <action
+            android:id="@+id/action_fragmentSubjects_to_fragmentHome"
+            app:destination="@id/fragmentHome" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentStudents"
+        android:name="com.example.teacherhelper.ui.FragmentStudents"
+        android:label="FragmentStudents" >
+        <action
+            android:id="@+id/action_fragmentStudents_to_fragmentStudentGrades"
+            app:destination="@id/fragmentStudentGrades" />
+        <action
+            android:id="@+id/action_fragmentStudents_to_fragmentHome"
+            app:destination="@id/fragmentHome" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentSubjectEdit"
+        android:name="com.example.teacherhelper.ui.FragmentSubjectEdit"
+        android:label="FragmentSubjectEdit" >
+        <action
+            android:id="@+id/action_fragmentSubjectEdit_to_fragmentSubjects"
+            app:destination="@id/fragmentSubjects" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentStudentGrades"
+        android:name="com.example.teacherhelper.ui.FragmentStudentGrades"
+        android:label="FragmentStudentGrades" >
+        <action
+            android:id="@+id/action_fragmentStudentGrades_to_fragmentStudents"
+            app:destination="@id/fragmentStudents" />
+    </fragment>
+</navigation>
