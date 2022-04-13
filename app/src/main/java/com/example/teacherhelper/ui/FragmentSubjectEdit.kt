@@ -40,11 +40,11 @@ class FragmentSubjectEdit: Fragment() {
 
         view.findViewById<Button>(R.id.add_student_to_subject_button).setOnClickListener {
             if(studentsListAdapter.getSelectedPosition() == -1) {
-                val elementNotPickedAlert = "Nie wybrano studenta"
+                val elementNotPickedAlert = "Student not picked"
                 Toast.makeText(context, elementNotPickedAlert, Toast.LENGTH_SHORT).show()
             }
             else if(!Utilities.albumNumberNotInList(studentsListAdapter.getSelectedAlbumNumber()!!, viewModel.attendingStudents)) {
-                val elementAlreadyInListAlert = "Student już dodany"
+                val elementAlreadyInListAlert = "Student already added"
                 Toast.makeText(context, elementAlreadyInListAlert, Toast.LENGTH_SHORT).show()
             }
             else {
@@ -55,7 +55,7 @@ class FragmentSubjectEdit: Fragment() {
 
         view.findViewById<Button>(R.id.delete_student_from_subject_button).setOnClickListener {
             if(attendingStudentsListAdapter.getSelectedPosition() == -1) {
-                val elementNotPickedAlert = "Nie wybrano studenta"
+                val elementNotPickedAlert = "Student not picked"
                 Toast.makeText(context, elementNotPickedAlert, Toast.LENGTH_SHORT).show()
             }
             else {

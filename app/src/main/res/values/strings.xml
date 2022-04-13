@@ -1,40 +1,40 @@
 <resources>
     <string name="app_name">TeacherHelper</string>
-    <string name="addElement_text_content">DODAJ</string>
+    <string name="addElement_text_content">ADD</string>
 
-    <string name="subjects_text_content">PRZEDMIOTY</string>
-    <string name="editSubject_text_content">EDYTUJ PRZEDMIOT</string>
-    <string name="addStudent_text_content">DODAJ STUDENTA</string>
-    <string name="deleteStudent_text_content">USUŃ STUDENTA</string>
+    <string name="subjects_text_content">SUBJECTS</string>
+    <string name="editSubject_text_content">EDIT SUBJECT</string>
+    <string name="addStudent_text_content">ADD STUDENT</string>
+    <string name="deleteStudent_text_content">DELETE STUDENT</string>
 
-    <string name="students_text_content">STUDENCI</string>
-    <string name="gradesList_text_content">LISTA OCEN</string>
-    <string name="addGrade_text_content">DODAJ OCENĘ</string>
-    <string name="checkMean_text_content">ŚREDNIA</string>
-    <string name="studentGrades_text_content">OCENY STUDENTA</string>
+    <string name="students_text_content">STUDENTS</string>
+    <string name="gradesList_text_content">LIST OF GRADES</string>
+    <string name="addGrade_text_content">ADD GRADE</string>
+    <string name="checkMean_text_content">GRADES MEAN</string>
+    <string name="studentGrades_text_content">STUDENT GRADES</string>
 
-    <string name="reset_text_content">RESETUJ DANE</string>
+    <string name="reset_text_content">RESET DATA</string>
 
-    <string name="firstName_textView_content">Imię</string>
-    <string name="lastName_textView_content">Nazwisko</string>
-    <string name="albumNumber_textView_content">Numer albumu</string>
-    <string name="student_textView_content">Imię i nazwisko studenta</string>
+    <string name="firstName_textView_content">Name</string>
+    <string name="lastName_textView_content">Surname</string>
+    <string name="albumNumber_textView_content">Album number</string>
+    <string name="student_textView_content">Student\'s name</string>
     <string name="subjectId_textView_content">Id</string>
-    <string name="subjectName_textView_content">Nazwa</string>
-    <string name="subjectGroup_textView_content">Grupa</string>
-    <string name="subjectWhen_textView_content">Kiedy</string>
-    <string name="subject_textView_content">Nazwa i grupa przedmiotu</string>
-    <string name="grade_textView_content">Ocena</string>
-    <string name="studentGradesMean_textView_content">Srednia ocen</string>
+    <string name="subjectName_textView_content">Subject name</string>
+    <string name="subjectGroup_textView_content">Group</string>
+    <string name="subjectWhen_textView_content">When</string>
+    <string name="subject_textView_content">Subject\'s name and group</string>
+    <string name="grade_textView_content">Grade</string>
+    <string name="studentGradesMean_textView_content">Grades mean</string>
 
     <string-array name="week_days">
-        <item>Poniedziałek</item>
-        <item>Wtorek</item>
-        <item>Środa</item>
-        <item>Czwartek</item>
-        <item>Piątek</item>
-        <item>Sobota</item>
-        <item>Niedziela</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
     </string-array>
 
     <string-array name="hours">

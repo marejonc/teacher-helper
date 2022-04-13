@@ -54,7 +54,7 @@ class FragmentSubjects: Fragment() {
 
         view.findViewById<Button>(R.id.edit_subject_button).setOnClickListener{
             if(subjectListAdapter.getSelectedPosition() == -1) {
-                val elementNotPickedAlert = "Nie wybrano przedmiotu"
+                val elementNotPickedAlert = "Subject not picked"
                 Toast.makeText(context, elementNotPickedAlert, Toast.LENGTH_SHORT).show()
             }
             else

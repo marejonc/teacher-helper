@@ -28,7 +28,7 @@ class FragmentHome: Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         view.findViewById<Button>(R.id.reset_database_button).setOnClickListener {
-            val deleteAlert = "Zresetowano lokalną bazę danych"
+            val deleteAlert = "Local database reset"
             Toast.makeText(context, deleteAlert, Toast.LENGTH_SHORT).show()
 
             viewModel.deleteAllData()

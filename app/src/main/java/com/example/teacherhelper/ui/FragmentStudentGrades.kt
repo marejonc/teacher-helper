@@ -40,7 +40,7 @@ class FragmentStudentGrades: Fragment() {
 
         view.findViewById<Button>(R.id.add_grade_button).setOnClickListener {
             if(studentSubjectsListAdapter.getSelectedPosition() == -1) {
-                val elementNotPickedAlert = "Nie wybrano przedmiotu"
+                val elementNotPickedAlert = "Subject not picked"
                 Toast.makeText(context, elementNotPickedAlert, Toast.LENGTH_SHORT).show()
             }
             else {
@@ -55,7 +55,7 @@ class FragmentStudentGrades: Fragment() {
         view.findViewById<Button>(R.id.check_grades_mean_button).setOnClickListener {
             if(!Utilities.calculateGradesMean(viewModel.studentGrades).isNaN())
             {
-                val meanAlert = "Średnia to: ${Utilities.calculateGradesMean(viewModel.studentGrades)}"
+                val meanAlert = "The mean is: ${Utilities.calculateGradesMean(viewModel.studentGrades)}"
                 Toast.makeText(context, meanAlert, Toast.LENGTH_SHORT).show()
             }
         }

@@ -51,7 +51,7 @@ class FragmentStudents: Fragment() {
 
         view.findViewById<Button>(R.id.student_grades_button).setOnClickListener{
             if(studentListAdapter.getSelectedPosition() == -1) {
-                val elementNotPickedAlert = "Nie wybrano studenta"
+                val elementNotPickedAlert = "Student not picked"
                 Toast.makeText(context, elementNotPickedAlert, Toast.LENGTH_SHORT).show()
             }
             else
